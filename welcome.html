@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Bem-vindo</title>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1 id="welcome-message"></h1>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+
+    <script src="./src/script.js"></script>
+    <script>
+        function logout() {
+            localStorage.removeItem('currentUser');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

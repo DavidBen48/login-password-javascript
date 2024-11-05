@@ -1,0 +1,94 @@
+* {
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container, .welcome-container {
+  background: white;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.form {
+  margin: 20px 0;
+}
+
+input {
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.buttoms {
+  display: flex;
+  width: 100%;
+  gap: 5%;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+.welcome-container {
+  width: 50%;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 20px; 
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* responsividade */
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 25px;
+  }
+  button {
+    font-size: 12.5px;
+  }
+  .container, .welcome-container {
+    padding: 20px;
+  }
+  .copyright {
+    font-size: 13px; 
+  }
+}
